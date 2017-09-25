@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">Pirate Augmented</string>
+  <string name="viking">Viking</string>
+  <string name="cannon">Cannon</string>
+  <string name="target">Target</string>
+  <string name="camera_permission_toast">Camera permission is needed to run this application</string>
+  <string name="searching_for_surfaces">Searching for surfaces...</string>
+  <string name="ar_device_support">This device does not support AR</string>
+</resources>

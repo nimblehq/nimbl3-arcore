@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.nimbl3.arcore.sample.MainActivity">
+
+  <RadioGroup
+    android:id="@+id/radioGroup"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/padding_standard"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <RadioButton
+      android:id="@+id/radioViking"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/padding_standard"
+      android:layout_marginEnd="@dimen/padding_standard"
+      android:layout_marginBottom="@dimen/padding_half"
+      android:checked="true"
+      android:onClick="onRadioButtonClicked"
+      android:text="@string/viking" />
+
+    <RadioButton
+      android:id="@+id/radioCannon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/padding_standard"
+      android:layout_marginEnd="@dimen/padding_standard"
+      android:layout_marginBottom="@dimen/padding_half"
+      android:checked="false"
+      android:onClick="onRadioButtonClicked"
+      android:text="@string/cannon" />
+
+    <RadioButton
+      android:id="@+id/radioTarget"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/padding_standard"
+      android:layout_marginEnd="@dimen/padding_standard"
+      android:layout_marginBottom="@dimen/padding_half"
+      android:checked="false"
+      android:onClick="onRadioButtonClicked"
+      android:text="@string/target" />
+
+  </RadioGroup>
+
+  <android.opengl.GLSurfaceView
+    android:id="@+id/surfaceView"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</android.support.constraint.ConstraintLayout>
